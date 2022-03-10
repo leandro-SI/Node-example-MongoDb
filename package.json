@@ -1,0 +1,23 @@
+{
+  "name": "node-example-mongodb",
+  "version": "1.0.0",
+  "description": "Simples exemplo de Node.js utilizando o bando de dados NoSql MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandro-SI/Node-example-MongoDb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandro-SI/Node-example-MongoDb/issues"
+  },
+  "homepage": "https://github.com/leandro-SI/Node-example-MongoDb#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "mongoose": "^5.6.2"
+  }
+}
