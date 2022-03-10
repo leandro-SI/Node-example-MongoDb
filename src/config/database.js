@@ -1,4 +1,5 @@
-import mongoose from 'mongoose'
+//import { mongoose } from 'mongoose'
+const mongoose = require('mongoose')
 
 mongoose.Promise = global.Promise
 
@@ -18,6 +19,6 @@ mongoose.connection.on('error', () => {
   throw new Error('Could not connect to MongoDB.')
 })
 
-export default {
+module.exports = {
   connect: () => mongoose.connect(config.uri, config.options)
 }

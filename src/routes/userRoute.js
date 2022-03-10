@@ -1,4 +1,5 @@
-import UserModel from '../models/users'
+// import UserModel from '../models/users'
+const UserModel = require('../models/users')
 
 const userRoute = (app) => {
     

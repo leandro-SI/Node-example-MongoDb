@@ -1,11 +1,12 @@
-import Mongoose from 'mongoose'
+//import Mongoose from 'mongoose'
+const Mongoose = require('mongoose')
 
 const schema = new Mongoose.Schema({
     firstName: String,
     lastName: String,
     email: {
         type: String,
-        required: [true, 'Email is required'],
+        required: [false, 'Email is required'],
         unique: true,
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address'],
     },
@@ -23,4 +24,4 @@ const schema = new Mongoose.Schema({
 
 const UsersModel = Mongoose.model('Users', schema)
 
-export default UsersModel
+module.exports = UsersModel

@@ -1,8 +1,12 @@
-import Express from 'express'
-import bodyParser from 'body-parser'
+//import Express from 'express'
+//import bodyParser from 'body-parser'
+const Express = require('express')
+const bodyParser = require('body-parser')
 
-import database from './config/database'
-import userRoute from './routes/userRoute'
+// import database from './config/database'
+// import userRoute from './routes/userRoute'
+const database = require('./config/database')
+const userRoute = require('./routes/userRoute')
 
 const app = Express()
 const port = 3000
